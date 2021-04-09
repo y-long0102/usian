@@ -9,7 +9,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class EurekaApp{
 
     public static void main(String[] args) {
-        System.out.println("我刚刚增加了内容。。。我修改了");
+        System.out.println("我刚刚增加了内容。。。");
+        System.out.println("我是新增的。。。0001");
+        System.out.println("我刚刚增加了内容。修改了");
         System.out.println("我是新增的。。。0002");
         SpringApplication.run(EurekaApp.class, args);
     }
