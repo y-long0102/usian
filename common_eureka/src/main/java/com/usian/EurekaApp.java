@@ -10,6 +10,7 @@ public class EurekaApp{
 
     public static void main(String[] args) {
         System.out.println("我刚刚增加了内容。。。");
+        System.out.println("我是新增的。。。0001");
         SpringApplication.run(EurekaApp.class, args);
     }
 }
