@@ -16,6 +16,9 @@
         <module>usian_item_service</module>
         <module>usian_item_feign</module>
         <module>usian_item_web</module>
+        <module>usian_content_service</module>
+        <module>usian_content_feign</module>
+        <module>usian_content_web</module>
     </modules>
 
     <!--Spring Boot 父工程-->
