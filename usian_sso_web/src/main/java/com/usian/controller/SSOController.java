@@ -44,6 +44,8 @@ public class SSOController {
         if(map != null){
             System.out.println("222");
             System.out.println("222");
+            System.out.println("222");
+            System.out.println("222");
             return Result.ok(map);
         }
         return Result.error("登录失败");
