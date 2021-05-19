@@ -42,6 +42,7 @@ public class SSOController {
     public Result userLogin(TbUser user){
         Map<String, Object> map = ssoFeignService.userLogin(user);
         if(map != null){
+            System.out.println("222");
             return Result.ok(map);
         }
         return Result.error("登录失败");
