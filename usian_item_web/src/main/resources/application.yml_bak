@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: usian-item-web
+server:
+  port: 8091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+fdfs:
+  so-timeout: 1501 # 超时时间
+  connect-timeout: 601 # 连接超时时间
+  thumb-image: # 缩略图
+    width: 60
+    height: 60
+  tracker-list: # tracker地址：你的虚拟机服务器地址+端口（默认是22122）
+    - 192.168.2.101:22122
+feign:
+  hystrix:
+    enabled: true #开启降级处理
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        requestVolumeThreshold: 3
+        errorThresholdPercentage: 5
+        sleepWindowInMilliseconds: 5000
+
+      #第一层 hystrix 超时时间设置
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 8000 #默认情况下是线程池隔离，超时时间 1000ms
+#第二层 ribbon 超时时间设置：设置比第一层小
+ribbon:
+  ConnectTimeout: 3000 #请求连接的超时时间: 默认 5s
+  ReadTimeout: 2000 #请求处理的超时时间: 默认 5s

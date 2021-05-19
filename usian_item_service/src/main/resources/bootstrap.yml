@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:3344  #配置中心的地址
+      name: usian-item-service #需要从github上读取的资源名称，注意没有yml后缀名
+      profile: dev   #本次访问的配置项
+      label: master
+  rabbitmq:
+    host: 192.168.2.101
+    username: admin
+    password: 1111
+    virtual-host: /

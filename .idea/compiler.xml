@@ -6,32 +6,66 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common_config" />
         <module name="common_eureka" />
         <module name="common_mapper" />
         <module name="common_pojo" />
+        <module name="common_redis" />
         <module name="common_utils" />
+        <module name="common_zuul" />
+        <module name="usian_cart_feign" />
+        <module name="usian_cart_service" />
+        <module name="usian_cart_web" />
         <module name="usian_content_feign" />
         <module name="usian_content_service" />
         <module name="usian_content_web" />
+        <module name="usian_detail_web" />
         <module name="usian_item_feign" />
         <module name="usian_item_service" />
         <module name="usian_item_web" />
+        <module name="usian_order_feign" />
+        <module name="usian_order_service" />
+        <module name="usian_order_web" />
+        <module name="usian_portal_web" />
+        <module name="usian_search_feign" />
+        <module name="usian_search_service" />
+        <module name="usian_search_web" />
+        <module name="usian_sso_feign" />
+        <module name="usian_sso_service" />
+        <module name="usian_sso_web" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common_config" options="-parameters" />
       <module name="common_eureka" options="-parameters" />
       <module name="common_mapper" options="-parameters" />
       <module name="common_pojo" options="-parameters" />
+      <module name="common_redis" options="-parameters" />
       <module name="common_utils" options="-parameters" />
+      <module name="common_zuul" options="-parameters" />
+      <module name="usian_cart_feign" options="-parameters" />
+      <module name="usian_cart_service" options="-parameters" />
+      <module name="usian_cart_web" options="-parameters" />
       <module name="usian_content_feign" options="-parameters" />
       <module name="usian_content_service" options="-parameters" />
       <module name="usian_content_web" options="-parameters" />
+      <module name="usian_detail_web" options="-parameters" />
       <module name="usian_item_feign" options="-parameters" />
       <module name="usian_item_service" options="-parameters" />
       <module name="usian_item_web" options="-parameters" />
+      <module name="usian_order_feign" options="-parameters" />
+      <module name="usian_order_service" options="-parameters" />
+      <module name="usian_order_web" options="-parameters" />
       <module name="usian_parent" options="-parameters" />
+      <module name="usian_portal_web" options="-parameters" />
+      <module name="usian_search_feign" options="-parameters" />
+      <module name="usian_search_service" options="-parameters" />
+      <module name="usian_search_web" options="-parameters" />
+      <module name="usian_sso_feign" options="-parameters" />
+      <module name="usian_sso_service" options="-parameters" />
+      <module name="usian_sso_web" options="-parameters" />
     </option>
   </component>
 </project>

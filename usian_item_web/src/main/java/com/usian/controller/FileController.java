@@ -1,6 +1,9 @@
 package com.usian.controller;
 
 import com.usian.utils.Result;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -11,9 +14,12 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("file")
+@Api("这时一个文件上传的controller")
 public class FileController {
 
-    @RequestMapping("upload")
+//    @RequestMapping("upload")
+    @PostMapping("upload")
+    @ApiImplicitParam(name = "file", type = "MultipartFile", value = "上传文件")
     public Result upload(MultipartFile file){
         if(file != null && file.getSize() > 0){
             String fileName = file.getOriginalFilename();

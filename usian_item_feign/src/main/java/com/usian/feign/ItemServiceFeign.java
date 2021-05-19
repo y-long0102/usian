@@ -1,8 +1,8 @@
 package com.usian.feign;
 
-import com.usian.pojo.TbItem;
-import com.usian.pojo.TbItemCat;
-import com.usian.pojo.TbItemParam;
+import com.usian.fallback.ItemServiceFallback;
+import com.usian.pojo.*;
+import com.usian.utils.CatResult;
 import com.usian.utils.PageResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 import java.util.Map;
 
-@FeignClient("usian-item-service")
+@FeignClient(value = "usian-item-service", fallbackFactory = ItemServiceFallback.class)
 public interface ItemServiceFeign {
 
     @RequestMapping("service/item/selectItemInfo")
@@ -39,4 +39,13 @@ public interface ItemServiceFeign {
 
     @RequestMapping("service/itemParam/insertItemParam")
     Integer insertItemParam(@RequestBody TbItemParam tbItemParam);
+
+    @RequestMapping("service/itemCategory/selectItemCategoryAll")
+    CatResult selectItemCategoryAll();
+
+    @RequestMapping("service/item/selectItemDescByItemId")
+    TbItemDesc selectItemDescByItemId(@RequestParam Long itemId);
+
+    @RequestMapping("service/item/selectTbItemParamItemByItemId")
+    TbItemParamItem selectTbItemParamItemByItemId(@RequestParam Long itemId);
 }

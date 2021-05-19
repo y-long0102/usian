@@ -28,4 +28,6 @@ public interface TbOrderMapper {
     int updateByPrimaryKeySelective(TbOrder record);
 
     int updateByPrimaryKey(TbOrder record);
+
+    List<TbOrder> selectOvertimeOrder();
 }

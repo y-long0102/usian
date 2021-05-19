@@ -1,0 +1,26 @@
+server:
+  port: 8102
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+spring:
+  application:
+    name: usian-order-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/usian?characterEncoding=UTF-8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  rabbitmq:
+    host: 192.168.2.101
+    username: admin
+    password: 1111
+    virtual-host: /usian
+    publisher-confirms: true #开启消息确认回调
+    publisher-returns: true #开启消息退回回调
+#订单
+ORDER_ID_KEY: ORDER_ID_KEY
+ORDER_ID_BEGIN: 100544
+ORDER_ITEM_ID_KEY: ORDER_ITEM_ID_KEY

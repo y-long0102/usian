@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: common-zuul
+server:
+  port: 7070
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+zuul:
+  sensitive-headers: true #全局配置，解决在网关服务中不传递请求头的问题
+  routes:
+    usian-item-web:
+      path: /backend_item/**
+    usian-content-web:
+      path: /backend_content/**
+    usian-search-web:
+      path: /frontend_search/**
+    usian-portal-web:
+      path: /frontend_portal/**
+    usian-detail-web:
+      path: /frontend_detail/**
+    usian-sso-web:
+      path: /frontend_sso/**
+    usian-cart-web:
+      path: /frontend_cart/**
+    usian-order-web:
+      path: /frontend_order/**
+#第一层 hystrix 超时时间设置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 8000 #默认情况下是线程池隔离，超时时间 1000ms
+#第二层 ribbon 超时时间设置：设置比第一层小
+ribbon:
+  ConnectTimeout: 3000 #请求连接的超时时间: 默认 5s
+  ReadTimeout: 3000 #请求处理的超时时间: 默认 5s

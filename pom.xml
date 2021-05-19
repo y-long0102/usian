@@ -19,6 +19,23 @@
         <module>usian_content_service</module>
         <module>usian_content_feign</module>
         <module>usian_content_web</module>
+        <module>usian_portal_web</module>
+        <module>common_redis</module>
+        <module>usian_search_service</module>
+        <module>usian_search_feign</module>
+        <module>usian_search_web</module>
+        <module>usian_detail_web</module>
+        <module>usian_sso_service</module>
+        <module>usian_sso_feign</module>
+        <module>usian_sso_web</module>
+        <module>usian_cart_service</module>
+        <module>usian_cart_feign</module>
+        <module>usian_cart_web</module>
+        <module>usian_order_service</module>
+        <module>usian_order_feign</module>
+        <module>usian_order_web</module>
+        <module>common_zuul</module>
+        <module>common_config</module>
     </modules>
 
     <!--Spring Boot 父工程-->
@@ -35,6 +52,7 @@
         <pagehelper-version>1.2.10</pagehelper-version>
         <logback-version>5.0</logback-version>
         <spring-mybats-version>2.0.1</spring-mybats-version>
+        <fastDFS-client-version>1.26.2</fastDFS-client-version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -81,6 +99,12 @@
                 <groupId>net.logstash.logback</groupId>
                 <artifactId>logstash-logback-encoder</artifactId>
                 <version>${logback-version}</version>
+            </dependency>
+            <!--fastdfs-->
+            <dependency>
+                <groupId>com.github.tobato</groupId>
+                <artifactId>fastdfs-client</artifactId>
+                <version>${fastDFS-client-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -2,15 +2,32 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_mapper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_cart_feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_cart_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_cart_web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_content_feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_content_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_content_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_detail_web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_item_feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_item_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_item_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_order_feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_order_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_order_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_portal_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_search_feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_search_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_search_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_sso_feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_sso_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_sso_web" charset="UTF-8" />
   </component>
 </project>
