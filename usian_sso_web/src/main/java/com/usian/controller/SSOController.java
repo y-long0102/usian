@@ -24,7 +24,6 @@ public class SSOController {
         Boolean b = ssoFeignService.checkUserInfo(checkValue, checkFlag);
         if(b){
             System.out.println("哈哈哈哈");
-            System.out.println("哈33哈哈哈");
             System.out.println("哈哈哈哈");
             return Result.ok(b);
         }
