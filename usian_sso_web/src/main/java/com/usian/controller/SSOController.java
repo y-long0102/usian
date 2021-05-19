@@ -23,9 +23,7 @@ public class SSOController {
         // 校验通过就是true， 不通过就是false
         Boolean b = ssoFeignService.checkUserInfo(checkValue, checkFlag);
         if(b){
-            System.out.println("哈哈哈哈");
-            System.out.println("哈哈哈哈");
-            System.out.println("哈哈哈哈");
+            System.out.println("wwwww");
             return Result.ok(b);
         }
         return Result.error("校验失败");
@@ -44,8 +42,6 @@ public class SSOController {
     public Result userLogin(TbUser user){
         Map<String, Object> map = ssoFeignService.userLogin(user);
         if(map != null){
-            System.out.println("222");
-            System.out.println("22211");
             return Result.ok(map);
         }
         return Result.error("登录失败");
