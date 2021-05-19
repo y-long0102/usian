@@ -43,7 +43,7 @@ public class SSOController {
         Map<String, Object> map = ssoFeignService.userLogin(user);
         if(map != null){
             System.out.println("222");
-            System.out.println("222");
+            System.out.println("22211");
             System.out.println("222");
             System.out.println("222");
             return Result.ok(map);
