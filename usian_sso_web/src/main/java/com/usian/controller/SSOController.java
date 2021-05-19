@@ -25,6 +25,7 @@ public class SSOController {
         if(b){
             System.out.println("哈哈哈哈");
             System.out.println("哈哈哈哈");
+            System.out.println("哈哈哈哈");
             return Result.ok(b);
         }
         return Result.error("校验失败");
