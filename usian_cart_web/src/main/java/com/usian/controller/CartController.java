@@ -48,6 +48,8 @@ public class CartController {
 //            // 将商品添加购购物车， /
 //            cartFromCookie.put(itemId.toString(), tbItem);
             // 将修改后的cookie返回给浏览器客户端
+            // 将修改后的cookie返回给浏览器客户端
+            // 将修改后的cookie返回给浏览器客户端
             Map<String, TbItem> cartFromCookie = this.getCartFromCookie(request);
             this.addItemToCart(cartFromCookie, itemId, num);
             this.addClientCookie(request, response, cartFromCookie);
